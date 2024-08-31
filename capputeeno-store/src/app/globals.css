@@ -2,6 +2,8 @@
 
   /* Colors */
 
+  --Logo-Color: #5D5D6D;
+
   --Brand-Blue: #115D8C;
   --Brand-Orange: #F25D27;
 
@@ -19,7 +21,7 @@
   --Orange-Low: #FFA585;
   --Yellow: #EFB866;
 
-  --Background: #F5F8FA;
+  --Background: #F0F0F5;
 
 }
 
@@ -32,4 +34,39 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  position: relative;
+  width: 100vw;
+  max-width: 1440px;
+}
+
+header,
+main,
+footer {
+  padding-inline: 11.111111%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Background);
+}
+
+button,
+input {
+  outline: 0;
+  border: none;
+  background: transparent;
+}
+
+button,
+a {
+  cursor: pointer;
 }
